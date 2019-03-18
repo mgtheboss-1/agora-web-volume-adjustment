@@ -238,7 +238,7 @@
 
     $(document).ready(function() {
         $("#adjust-volume").on("change", function() {
-            console.log($(this).val());
+            console.log("Volume: "+$(this).val());
             remoteStream.setAudioVolume(parseInt($(this).val()));
         });
     });
